@@ -1,0 +1,9 @@
+export const bgDarkGreen = "#202329";
+export const neonGreen = "#5FE03F";
+export const blue = "#11B0C8";
+export const red = "#ED2D2D";
+export const lightGreen = "#D2FAC8";
+export const yellow = "#C8DC5E";
+export const darkPurple = "#300242";
+export const lightPurple = "#bc13fe";
+export const lightGray = "#3C3E44";
