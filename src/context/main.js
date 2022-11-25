@@ -18,6 +18,7 @@ export const MainProvider = ({children}) => {
     const [status, setStatus] = useState("")
     const [gender, setGender] = useState("")
     const [pageApi, setPageApi] = useState(1)
+    const [showCharacter, setShowCharacter] = useState(false)
 
 
     useEffect( () => {
@@ -45,6 +46,8 @@ export const MainProvider = ({children}) => {
             setGender,
             pageApi, 
             setPageApi,
+            showCharacter, 
+            setShowCharacter,
         ]}>
             {children}
         </MainContext.Provider>
