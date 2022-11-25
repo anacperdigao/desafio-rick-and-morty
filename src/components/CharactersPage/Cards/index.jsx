@@ -3,10 +3,10 @@ import { lightGray, neonGreen, red } from '../../UI/colorVar'
 import * as S from './styles'
 
 
-const Cards = ({image, name, status, species, gender, origin}) => {
+const Cards = ({image, name, status, species, gender, origin, handleClick}) => {
 
     return (
-        <S.CardCharacter>
+        <S.CardCharacter onClick={handleClick}>
             <S.ImageCard src={image} alt={name} />
             <S.DivInfo>
                 <S.TitleName>{name}</S.TitleName>

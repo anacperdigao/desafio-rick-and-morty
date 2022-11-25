@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { MainContext } from '../../context/main'
 import Cards from './Cards'
 import SearchBox from './SearchBox'
+import Character from '../Character'
 import * as S from './styles'
 
 
@@ -20,7 +21,9 @@ const CharactersPage = () => {
           setGender,
           pageApi, 
           setPageApi,
-         ] = useContext(MainContext)
+          showCharacter, 
+          setShowCharacter,
+      ] = useContext(MainContext)
 
 
   const handlePrevious = () => {
@@ -42,6 +45,7 @@ const CharactersPage = () => {
       <S.DivCards>
         {apiData.results.map(item => 
           <Cards
+            handleClick={() => setShowCharacter(true)}
             key={item.id}
             image={item.image}
             name={item.name}
@@ -64,6 +68,8 @@ const CharactersPage = () => {
           Next &gt;
         </S.ParagraphLoad>
       </S.DivPages>
+
+      {showCharacter && <Character />}
 
     </S.Page>
   )
