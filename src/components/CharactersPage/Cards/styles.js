@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { bgDarkGreen, lightGray, lightGreen } from '../../UI/colorVar'
+import { bgDarkGreen, blue, lightGray, lightGreen } from '../../UI/colorVar'
 
 
 export const CardCharacter = styled.div`
@@ -10,6 +10,12 @@ export const CardCharacter = styled.div`
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+    cursor: pointer;
+
+    :hover{
+        transform: scale(1.05);
+        border: 5px solid ${blue};
+    }
 `
 
 export const ImageCard = styled.img`
