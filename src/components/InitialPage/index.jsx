@@ -13,7 +13,7 @@ const InitialPage = () => {
 
         <S.DivTitles>
             <S.Title1>Greetings!!</S.Title1>
-            <S.Title2>What are you looking for today?</S.Title2>
+            <S.Title2>Click on the image to discover a new world...</S.Title2>
         </S.DivTitles>
 
         <S.ImageLogo src={rick} alt="logo" onClick={() => setPageState(pages[1])}/>

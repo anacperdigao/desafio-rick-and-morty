@@ -17,6 +17,7 @@ export const DivTitles = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 15px 0px;
 `
 
 export const ImageLogo = styled.img`
@@ -38,14 +39,14 @@ export const ImageLogo = styled.img`
 
 export const Title1 = styled.h1`
     color: ${blue};
-    font-size: 54px;
+    font-size: 56px;
     letter-spacing: .15em;
 `
 
 export const Title2 = styled.h2`
     color: ${neonGreen};
-    font-size: 36px;
-    letter-spacing: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
     
 `
 
