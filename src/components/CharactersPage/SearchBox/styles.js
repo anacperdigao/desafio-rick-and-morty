@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { lightGray, lightGreen } from '../../UI/colorVar'
+import { lightGray, lightGreen, red } from '../../UI/colorVar'
+import { FaSearch } from "react-icons/fa"
 
 
 export const Box = styled.div`
@@ -56,30 +57,30 @@ export const Label = styled.label`
     color: ${lightGreen};
 `
 
-// export const Button = styled.button`
-//     background-color: ${red};
-//     display: flex;
-//     gap: 5px;
-//     height: 40px;
-//     width: 100px;
-//     padding: 5px 10px;
-//     border: none;
-//     border-radius: 5px;
-//     justify-content: center;
-//     align-items: center;
-//     cursor: pointer;
+export const Button = styled.button`
+    background-color: ${red};
+    display: flex;
+    gap: 5px;
+    height: 40px;
+    width: 100px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 
-//     :hover{
-//         opacity: 0.9;
-//     }
-// `
+    :hover{
+        opacity: 0.9;
+    }
+`
 
-// export const ImgSearch = styled(FaSearch)`
-//     color: ${lightGreen};
-//     font-size: 16px;
-// `
+export const ImgSearch = styled(FaSearch)`
+    color: ${lightGreen};
+    font-size: 16px;
+`
 
-// export const ButtonParagraph = styled.p`
-//     font-size: 14px;
-//     color: ${lightGreen};
-// `
+export const ButtonParagraph = styled.p`
+    font-size: 14px;
+    color: ${lightGreen};
+`
