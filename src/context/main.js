@@ -1,4 +1,4 @@
-import React, { createContext } from "react"
+import React, { createContext, useState } from "react"
 
 
 
@@ -11,8 +11,16 @@ MainContext.displayName = 'MainContext'
 //-------------- Criando o Provider
 export const MainProvider = ({children}) => {
 
+    const pages = ['Initial', 'Characters', 'Episodes']
+    const [pageState, setPageState] = useState(pages[0])
+    
+
     return(
-        <MainContext.Provider>
+        <MainContext.Provider value={[
+            pages,
+            pageState,
+            setPageState,
+        ]}>
             {children}
         </MainContext.Provider>
     )
