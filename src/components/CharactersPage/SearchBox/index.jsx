@@ -56,6 +56,11 @@ const SearchBox = () => {
                 </S.Select>
             </S.DivGender>
 
+            <S.Button>
+                <S.ImgSearch />
+                <S.ButtonParagraph>Search</S.ButtonParagraph>
+            </S.Button>
+
         </S.Box>
     )
 }
