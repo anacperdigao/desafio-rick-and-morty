@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { blue, lightGray, lightGreen, neonGreen } from "../UI/colorVar";
+import { lightGreen, neonGreen } from "../UI/colorVar";
 
 
 export const DivPage = styled.div`
@@ -11,7 +11,6 @@ export const DivPage = styled.div`
 `
 
 export const DivTitles = styled.div`
-    background-color: ${lightGray};
     width: 100%;
     display:flex;
     flex-direction: column;
@@ -31,16 +30,15 @@ export const ImageLogo = styled.img`
             0 0 .2rem white,
             0 0 0.8rem ${neonGreen},
             0 0 2.8rem ${lightGreen},
-            inset 0 0 1.3rem ${lightGreen};
-        transition: 0.2s;
-        transform: scale(1.05)
+            inset 0 0 1.5rem ${lightGreen};
+        transition: 0.1s;
     }
 `
 
 export const Title1 = styled.h1`
-    color: ${blue};
+    color: white;
     font-size: 56px;
-    letter-spacing: .15em;
+    letter-spacing: 5px;
 `
 
 export const Title2 = styled.h2`
