@@ -1,5 +1,6 @@
 export const bgDarkGreen = "#202329";
 export const neonGreen = "#5FE03F";
+export const neonDarkGreen = "#40BD02";
 export const blue = "#11B0C8";
 export const red = "#ED2D2D";
 export const lightGreen = "#D2FAC8";
