@@ -20,7 +20,7 @@ const SearchBox = () => {
             pageApi, 
             setPageApi,
        ] = useContext(MainContext)
-
+       
 
     return (
         <S.Box>
@@ -55,11 +55,6 @@ const SearchBox = () => {
                     <option value="unknown">Unknown</option>  
                 </S.Select>
             </S.DivGender>
-
-            <S.Button>
-                <S.ImgSearch />
-                <S.ButtonParagraph>Search</S.ButtonParagraph>
-            </S.Button>
 
         </S.Box>
     )
