@@ -45,6 +45,11 @@ const CharactersPage = () => {
   return (
 
     <S.Page>
+      <S.Header>
+        <S.Title>Rick and Morty</S.Title>
+        <S.SubTitle>Search for your favorite character</S.SubTitle>
+      </S.Header>
+
       <SearchBox />
 
       <S.DivCards>
@@ -66,7 +71,7 @@ const CharactersPage = () => {
       <S.DivPages>
         <S.ParagraphLoad onClick={handleFirst}>&lt;&lt; First</S.ParagraphLoad>
         <S.ParagraphLoad onClick={handlePrevious}>&lt; Previous</S.ParagraphLoad>
-        <S.ParagraphPages>Page {pageApi} out of {apiData.info.pages}</S.ParagraphPages>
+        <S.ParagraphPages>Page {pageApi} - {apiData.info.pages}</S.ParagraphPages>
         <S.ParagraphLoad onClick={handleNext}>Next &gt;</S.ParagraphLoad>
         <S.ParagraphLoad onClick={handleLast}>Last &gt;&gt;</S.ParagraphLoad>
       </S.DivPages>
