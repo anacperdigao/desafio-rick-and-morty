@@ -9,18 +9,18 @@ const SearchBox = () => {
     const [ pages,
             pageState,
             setPageState,
-            apiData, 
+            apiData,
             setApiData,
-            name, 
+            name,
             setName,
-            status, 
+            status,
             setStatus,
-            gender, 
+            gender,
             setGender,
-            pageApi, 
+            pageApi,
             setPageApi,
        ] = useContext(MainContext)
-       
+
     const handleClick = () => {
         setName("")
         setGender("")
@@ -32,9 +32,9 @@ const SearchBox = () => {
         <S.Box>
             <S.DivName>
                 <S.Label htmlFor="name">Name: </S.Label>
-                <S.InputName 
-                    type="text" 
-                    name="name" 
+                <S.InputName
+                    type="text"
+                    name="name"
                     placeholder='e.g. rick sanchez'
                     value={name}
                     onChange={e => setName(e.target.value.toLowerCase())}
@@ -58,7 +58,7 @@ const SearchBox = () => {
                     <option value="female">Female</option>
                     <option value="male">Male</option>
                     <option value="genderless">Genderless</option>
-                    <option value="unknown">Unknown</option>  
+                    <option value="unknown">Unknown</option>
                 </S.Select>
             </S.DivGender>
 

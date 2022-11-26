@@ -10,15 +10,15 @@ const CharactersPage = () => {
   const [ pages,
           pageState,
           setPageState,
-          apiData, 
+          apiData,
           setApiData,
-          name, 
+          name,
           setName,
-          status, 
+          status,
           setStatus,
-          gender, 
+          gender,
           setGender,
-          pageApi, 
+          pageApi,
           setPageApi
       ] = useContext(MainContext)
 
@@ -54,7 +54,7 @@ const CharactersPage = () => {
       <SearchBox />
 
       <S.DivCards>
-        {apiData.results.map(item => 
+        {apiData.results.map(item =>
           <Cards
             key={item.id}
             image={item.image}

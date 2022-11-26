@@ -3,9 +3,9 @@ import { lightGray, neonGreen, red } from '../UI/colorVar'
 import * as S from './styles'
 
 
-const Character = ({image, name, status, species, gender, origin, 
+const Character = ({image, name, status, species, gender, origin,
                     showCharacter, setShowCharacter, location, subspecies}) => {
-        
+
 
     return (
 
@@ -16,13 +16,13 @@ const Character = ({image, name, status, species, gender, origin,
                     <S.ImageCard src={image} alt={name} />
 
                     <S.DivInfo>
-                        
+
                         <S.TitleName>{name}</S.TitleName>
 
                         {status === "Alive" && <S.TagStatus style={{backgroundColor: `${neonGreen}`}}>{status}</S.TagStatus>}
                         {status === "Dead" && <S.TagStatus style={{backgroundColor: `${red}`}}>{status}</S.TagStatus>}
                         {status === "unknown" && <S.TagStatus style={{backgroundColor: `${lightGray}`}}>{status}</S.TagStatus>}
-                        
+
                         <S.DivLabelParagraph>
                             <S.Label>Species:</S.Label>
                             <S.Props>{species}</S.Props>

@@ -18,7 +18,7 @@ const Cards = ({image, name, status, species, gender, origin, location, subspeci
                     {status === "Alive" && <S.TagStatus style={{backgroundColor: `${neonGreen}`}}>{status}</S.TagStatus>}
                     {status === "Dead" && <S.TagStatus style={{backgroundColor: `${red}`}}>{status}</S.TagStatus>}
                     {status === "unknown" && <S.TagStatus style={{backgroundColor: `${lightGray}`}}>{status}</S.TagStatus>}
-                    
+
                     <S.DivLabelParagraph>
                         <S.Label>Species:</S.Label>
                         <S.Props>{species}</S.Props>
@@ -36,15 +36,15 @@ const Cards = ({image, name, status, species, gender, origin, location, subspeci
 
                 </S.DivInfo>
             </S.CardCharacter>
-            
-            {showCharacter 
-            && 
-            <Character 
-                image={image} 
-                name={name} 
-                status={status} 
-                species={species} 
-                gender={gender} 
+
+            {showCharacter
+            &&
+            <Character
+                image={image}
+                name={name}
+                status={status}
+                species={species}
+                gender={gender}
                 origin={origin}
                 location={location}
                 subspecies={subspecies}
