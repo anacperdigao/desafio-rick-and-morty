@@ -44,10 +44,11 @@ const CharactersPage = () => {
 
   return (
 
-    <S.Page>
+    <S.DivPage>
+
       <S.Header>
-        <S.Title>Rick and Morty</S.Title>
-        <S.SubTitle>Search for your favorite character</S.SubTitle>
+        <S.Title onClick={() => setPageState(pages[0])}>Rick and Morty</S.Title>
+        <S.SubTitle>Search for your favorite characters</S.SubTitle>
       </S.Header>
 
       <SearchBox />
@@ -68,15 +69,15 @@ const CharactersPage = () => {
         )}
       </S.DivCards>
 
-      <S.DivPages>
-        <S.ParagraphLoad onClick={handleFirst}>&lt;&lt; First</S.ParagraphLoad>
-        <S.ParagraphLoad onClick={handlePrevious}>&lt; Previous</S.ParagraphLoad>
+      <S.DivPagination>
+        <S.Paragraph onClick={handleFirst}>&lt;&lt; First</S.Paragraph>
+        <S.Paragraph onClick={handlePrevious}>&lt; Previous</S.Paragraph>
         <S.ParagraphPages>Page {pageApi} - {apiData.info.pages}</S.ParagraphPages>
-        <S.ParagraphLoad onClick={handleNext}>Next &gt;</S.ParagraphLoad>
-        <S.ParagraphLoad onClick={handleLast}>Last &gt;&gt;</S.ParagraphLoad>
-      </S.DivPages>
+        <S.Paragraph onClick={handleNext}>Next &gt;</S.Paragraph>
+        <S.Paragraph onClick={handleLast}>Last &gt;&gt;</S.Paragraph>
+      </S.DivPagination>
 
-    </S.Page>
+    </S.DivPage>
   )
 }
 

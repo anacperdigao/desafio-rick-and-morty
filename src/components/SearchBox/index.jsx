@@ -25,6 +25,7 @@ const SearchBox = () => {
         setName("")
         setGender("")
         setStatus("")
+        setPageApi(1)
     }
 
     return (

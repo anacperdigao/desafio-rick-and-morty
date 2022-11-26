@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { blue, lightGray, lightGreen, yellow } from '../UI/colorVar'
 
 
-export const Page = styled.div`
+export const DivPage = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -22,6 +22,11 @@ export const Title = styled.h1`
     font-size: 56px;
     letter-spacing: 1px;
     word-spacing: 5px;
+    cursor: pointer;
+
+    :hover{
+        color: ${lightGreen}
+    }
 `
 
 export const SubTitle = styled.h2`
@@ -39,7 +44,14 @@ export const DivCards = styled.div`
     margin: 40px 0;
 `
 
-export const ParagraphLoad = styled.p`
+export const DivPagination = styled.div`
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+`
+
+export const Paragraph = styled.p`
     color: ${lightGreen};
     font-size: 18px;
     cursor: pointer;
@@ -62,9 +74,3 @@ export const ParagraphPages = styled.p`
     font-size: 18px;
 `
 
-export const DivPages = styled.div`
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-`

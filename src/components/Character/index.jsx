@@ -30,7 +30,7 @@ const Character = ({image, name, status, species, gender, origin,
 
                         <S.DivLabelParagraph>
                             <S.Label>Subspecies:</S.Label>
-                            <S.Props>{subspecies === "" ? "None" : subspecies}</S.Props>
+                            <S.Props>{subspecies === "" ? species : subspecies}</S.Props>
                         </S.DivLabelParagraph>
 
                         <S.DivLabelParagraph>
