@@ -12,7 +12,7 @@ const InitialPage = () => {
     <S.DivPage>
 
         <S.DivTitles>
-            <S.Title1>Greetings!!</S.Title1>
+            <S.Title1>Greetings!</S.Title1>
             <S.Title2>Click on the image to discover a new world...</S.Title2>
         </S.DivTitles>
 
