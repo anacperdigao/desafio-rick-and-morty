@@ -11,7 +11,6 @@ export const CardCharacter = styled.div`
     flex-direction: row;
     box-sizing: border-box;
     cursor: pointer;
-
     :hover{
         transform: scale(1.05);
         border: 5px solid ${blue};
@@ -19,6 +18,10 @@ export const CardCharacter = styled.div`
 
     @media screen and (max-width: 480px){
       height: 150px;
+      :hover{
+        transform: none;
+        border: none;
+    }
     }
 `
 

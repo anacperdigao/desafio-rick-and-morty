@@ -101,7 +101,7 @@ export const ParagraphPages = styled.p`
 
     @media screen and (max-width: 480px){
       font-size: 10px;
-      width: 60px;
+      width: 70px;
     }
 `
 

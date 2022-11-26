@@ -91,7 +91,7 @@ export const TagStatus = styled.p`
 
     @media screen and (max-width: 480px){
       margin-bottom: 5px;
-      width: 55px;
+      width: 60px;
       padding: 0px 5px;
     }
 `
