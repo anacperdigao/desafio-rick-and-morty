@@ -24,10 +24,13 @@ export const MainProvider = ({children}) => {
         api
         .get(`/character/?page=${pageApi}&name=${name}&status=${status}&gender=${gender}`)
         .then((response) => {
-            setApiData(response.data); 
+            setApiData(response.data);
         })
-        .catch((erro) => {alert(`Ops! Ocorreu um erro: ${erro}`)})
-    }, [pageApi, name, status, gender]);
+        .catch((erro) => {
+          alert(`Ops! The name "${name}" doesn't exist!`)
+          setName("")
+        })
+    }, [name, status, gender]);
 
 
     return(
@@ -35,15 +38,15 @@ export const MainProvider = ({children}) => {
             pages,
             pageState,
             setPageState,
-            apiData, 
+            apiData,
             setApiData,
-            name, 
+            name,
             setName,
-            status, 
+            status,
             setStatus,
-            gender, 
+            gender,
             setGender,
-            pageApi, 
+            pageApi,
             setPageApi
         ]}>
             {children}
