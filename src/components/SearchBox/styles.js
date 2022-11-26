@@ -15,8 +15,7 @@ export const Box = styled.div`
 
     @media screen and (max-width: 480px){
       flex-direction: column;
-      height: 28vh;
-      min-height: 28vh;
+      height: 220px;
       justify-content: center;
       align-items: baseline;
       gap: 15px;
