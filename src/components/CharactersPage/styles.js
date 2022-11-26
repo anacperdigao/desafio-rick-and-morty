@@ -8,8 +8,28 @@ export const Page = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 150px;
-` 
+    padding: 30px 150px;
+`
+
+export const Header = styled.header`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
+export const Title = styled.h1`
+    color: white;
+    font-size: 56px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+`
+
+export const SubTitle = styled.h2`
+    color: ${yellow};
+    font-size: 16px;
+    margin-bottom: 10px;
+    word-spacing: 2px;
+`
 
 export const DivCards = styled.div`
     display: grid;
