@@ -16,6 +16,10 @@ export const CardCharacter = styled.div`
         transform: scale(1.05);
         border: 5px solid ${blue};
     }
+
+    @media screen and (max-width: 480px){
+      height: 150px;
+    }
 `
 
 export const ImageCard = styled.img`
@@ -34,6 +38,10 @@ export const DivInfo = styled.div`
 export const TitleName = styled.h3`
     color: ${bgDarkGreen};
     font-size: 22px;
+
+    @media screen and (max-width: 480px){
+      font-size: 16px;
+    }
 `
 
 export const TagStatus = styled.p`
@@ -47,6 +55,11 @@ export const TagStatus = styled.p`
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 480px){
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
 `
 
 export const DivLabelParagraph = styled.div`
@@ -60,10 +73,18 @@ export const DivLabelParagraph = styled.div`
 export const Label = styled.p`
     font-size: 14px;
     font-weight: bold;
-    color: ${lightGray}
+    color: ${lightGray};
+
+    @media screen and (max-width: 480px){
+      font-size: 10px;
+    }
 `
 
 export const Props = styled.p`
     font-size: 15px;
+
+    @media screen and (max-width: 480px){
+      font-size: 11px;
+    }
 `
 

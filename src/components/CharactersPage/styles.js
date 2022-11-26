@@ -9,6 +9,10 @@ export const DivPage = styled.div`
     justify-content: center;
     align-items: center;
     padding: 30px 150px;
+
+    @media screen and (max-width: 480px){
+      padding: 30px 30px;
+    }
 `
 
 export const Header = styled.header`
@@ -27,6 +31,10 @@ export const Title = styled.h1`
     :hover{
         color: ${lightGreen}
     }
+
+    @media screen and (max-width: 480px){
+      font-size: 36px;
+    }
 `
 
 export const SubTitle = styled.h2`
@@ -34,6 +42,10 @@ export const SubTitle = styled.h2`
     font-size: 16px;
     margin-bottom: 10px;
     word-spacing: 2px;
+
+    @media screen and (max-width: 480px){
+      margin-bottom: 20px;
+    }
 `
 
 export const DivCards = styled.div`
@@ -42,6 +54,11 @@ export const DivCards = styled.div`
     width: 100%;
     gap: 40px;
     margin: 40px 0;
+
+    @media screen and (max-width: 480px){
+      display: flex;
+      flex-direction: column;
+    }
 `
 
 export const DivPagination = styled.div`
@@ -49,13 +66,18 @@ export const DivPagination = styled.div`
     gap: 40px;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 480px){
+      gap: 8px;
+      margin-bottom: 20px;
+    }
 `
 
 export const Paragraph = styled.p`
     color: ${lightGreen};
     font-size: 18px;
     cursor: pointer;
-    height: 40px; 
+    height: 40px;
     width: 110px;
     border-radius: 10px;
     display: flex;
@@ -65,12 +87,21 @@ export const Paragraph = styled.p`
     :hover{
         background-color: ${lightGray};
         color: ${blue};
+    }
 
+    @media screen and (max-width: 480px){
+      font-size: 10px;
+      width: 60px;
     }
 `
 
 export const ParagraphPages = styled.p`
     color: ${yellow};
     font-size: 18px;
+
+    @media screen and (max-width: 480px){
+      font-size: 10px;
+      width: 60px;
+    }
 `
 

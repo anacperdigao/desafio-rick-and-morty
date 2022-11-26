@@ -21,6 +21,12 @@ export const ImgBackground = styled.img`
   top: 0;
   width: 100%;
   height: auto;
+
+  @media screen and (max-width: 480px){
+    width: auto;
+    height: 100%;
+    left: -300px;
+  }
 `
 
 export const DivInfo = styled.div`
@@ -32,13 +38,21 @@ export const Title = styled.h1`
     font-size: 68px;
     letter-spacing: 1px;
     word-spacing: 5px;
+
+    @media screen and (max-width: 480px){
+      font-size: 54px;
+    }
 `
 
 export const SubTitle = styled.h2`
     color: ${yellow};
     font-size: 20px;
     margin-bottom: 20px;
-    word-spacing: 2px; 
+    word-spacing: 2px;
+
+    @media screen and (max-width: 480px){
+      font-size: 16px;
+    }
 `
 
 export const Button = styled.button`
