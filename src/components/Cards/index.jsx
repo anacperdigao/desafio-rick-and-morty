@@ -13,6 +13,7 @@ const Cards = ({image, name, status, species, gender, origin, location, subspeci
             <S.CardCharacter onClick={() => setShowCharacter(true)}>
                 <S.ImageCard src={image} alt={name} />
                 <S.DivInfo>
+
                     <S.TitleName>{name}</S.TitleName>
 
                     {status === "Alive" && <S.TagStatus style={{backgroundColor: `${neonGreen}`}}>{status}</S.TagStatus>}
@@ -27,11 +28,6 @@ const Cards = ({image, name, status, species, gender, origin, location, subspeci
                     <S.DivLabelParagraph>
                         <S.Label>Gender:</S.Label>
                         <S.Props>{gender}</S.Props>
-                    </S.DivLabelParagraph>
-
-                    <S.DivLabelParagraph>
-                        <S.Label>Origin:</S.Label>
-                        <S.Props>{origin}</S.Props>
                     </S.DivLabelParagraph>
 
                 </S.DivInfo>

@@ -21,7 +21,7 @@ export const CardCharacter = styled.div`
       :hover{
         transform: none;
         border: none;
-    }
+      }
     }
 `
 
@@ -43,7 +43,7 @@ export const TitleName = styled.h3`
     font-size: 22px;
 
     @media screen and (max-width: 480px){
-      font-size: 16px;
+      font-size: 14px;
     }
 `
 

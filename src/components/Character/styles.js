@@ -30,7 +30,7 @@ export const Dialog = styled.dialog`
 
     @media screen and (max-width: 480px){
       width: 300px;
-      height: 600px;
+      height: 650px;
     }
 `
 
