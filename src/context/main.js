@@ -27,10 +27,10 @@ export const MainProvider = ({children}) => {
             setApiData(response.data);
         })
         .catch((erro) => {
-          alert(`Ops! The name "${name}" doesn't exist!`)
-          setName("")
+          alert(`Ops! The name "${name}" doesn't exist!`);
+          setName("");
         })
-    }, [name, status, gender]);
+    }, [pageApi, name, status, gender]);
 
 
     return(

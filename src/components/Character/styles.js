@@ -54,7 +54,7 @@ export const ImageCard = styled.img`
     border-radius: 10px 0 0 10px;
 
     @media screen and (max-width: 480px){
-      height: 70%;
+      height: 250px;
       border-radius: 10px 10px 0 0;
     }
 `
