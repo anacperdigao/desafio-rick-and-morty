@@ -21,6 +21,11 @@ const SearchBox = () => {
             setPageApi,
        ] = useContext(MainContext)
        
+    const handleClick = () => {
+        setName("")
+        setGender("")
+        setStatus("")
+    }
 
     return (
         <S.Box>
@@ -55,6 +60,8 @@ const SearchBox = () => {
                     <option value="unknown">Unknown</option>  
                 </S.Select>
             </S.DivGender>
+
+            <S.Button onClick={handleClick}>Clear filter</S.Button>
 
         </S.Box>
     )
