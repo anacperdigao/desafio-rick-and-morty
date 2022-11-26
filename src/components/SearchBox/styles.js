@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { lightGray, lightGreen } from '../UI/colorVar'
+import { lightGray, lightGreen, red } from '../UI/colorVar'
 
 
 export const Box = styled.div`
@@ -34,7 +34,7 @@ export const DivGender = styled.div`
 
 export const InputName = styled.input`
     height: 40px;
-    width: 300px;
+    width: 260px;
     padding: 5px 10px;
     outline: none;
     border-radius: 5px;
@@ -54,4 +54,20 @@ export const Select = styled.select`
 export const Label = styled.label`
     font-size: 20px;
     color: ${lightGreen};
+`
+
+export const Button = styled.button`
+    background-color: ${red};
+    font-size: 14px;
+    color: white;
+    height: 40px;
+    width: 100px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    :hover{
+        opacity: 0.9;
+    }
 `
