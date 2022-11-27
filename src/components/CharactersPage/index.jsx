@@ -19,27 +19,12 @@ const CharactersPage = () => {
           gender,
           setGender,
           pageApi,
-          setPageApi
-      ] = useContext(MainContext)
-
-
-  const handlePrevious = () => {
-    if(pageApi <= 1) return
-    setPageApi(parseInt(pageApi - 1))
-  }
-
-  const handleNext = () => {
-    if(apiData.info.next === null) return
-    setPageApi(parseInt(pageApi + 1))
-  }
-
-  const handleFirst = () => {
-    setPageApi(1)
-  }
-
-  const handleLast = () => {
-    setPageApi(apiData.info.pages)
-  }
+          setPageApi,
+          handlePrevious,
+          handleNext,
+          handleFirst,
+          handleLast,
+          handleClear ] = useContext(MainContext)
 
 
   return (

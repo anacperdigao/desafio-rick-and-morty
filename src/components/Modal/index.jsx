@@ -3,14 +3,14 @@ import { neonDarkGreen, red } from '../UI/colorVar'
 import * as S from './styles'
 
 
-const Character = ({image, name, status, species, gender, origin,
-                    showCharacter, setShowCharacter, location, subspecies}) => {
+const Modal = ({image, name, status, species, gender, origin,
+                    showModal, setShowModal, location, subspecies}) => {
 
 
   return (
 
-    <S.ShowCharacter>
-        <S.Dialog open={showCharacter}>
+    <S.DivShowModal>
+        <S.Dialog open={showModal}>
 
             <S.CardCharacter>
                 <S.ImageCard src={image} alt={name} />
@@ -52,12 +52,12 @@ const Character = ({image, name, status, species, gender, origin,
 
             </S.CardCharacter>
 
-            <S.Button onClick={() => setShowCharacter(false)}>Back</S.Button>
+            <S.Button onClick={() => setShowModal(false)}>Back</S.Button>
 
         </S.Dialog>
-    </S.ShowCharacter>
+    </S.DivShowModal>
 
   )
 }
 
-export default Character
+export default Modal

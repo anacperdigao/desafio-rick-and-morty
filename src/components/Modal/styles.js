@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { bgDarkGreen, lightGray, lightGreen, red } from '../UI/colorVar'
 
 
-export const ShowCharacter = styled.div`
+export const DivShowModal = styled.div`
     position: fixed;
     z-index: 1;
     padding-top: 100px;
