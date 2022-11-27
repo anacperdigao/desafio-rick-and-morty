@@ -2,13 +2,13 @@ import React, { createContext, useEffect, useState } from "react";
 import api from "../api/api";
 
 
-//-------------- Criando o contexto
+//-------------- Creating Context
 export const MainContext = createContext()
 MainContext.displayName = 'MainContext'
 
 
 
-//-------------- Criando o Provider
+//-------------- Creating Provider
 export const MainProvider = ({children}) => {
 
   const pages = ['Initial', 'Characters']
@@ -26,10 +26,9 @@ export const MainProvider = ({children}) => {
     .then((response) => {
         setApiData(response.data)
     })
-    .catch((erro) => {
-      alert(`Ops! The name "${name}" doesn't exist!`)
-      setName("")
-    })
+    // .catch((erro) => {
+    //   alert(`Ops! The name "${name}" doesn't exist!`)
+    // })
   }, [pageApi, name, status, gender])
 
 
@@ -61,26 +60,26 @@ export const MainProvider = ({children}) => {
 
   return(
     <MainContext.Provider value={[
-        pages,
-        pageState,
-        setPageState,
-        apiData,
-        setApiData,
-        name,
-        setName,
-        status,
-        setStatus,
-        gender,
-        setGender,
-        pageApi,
-        setPageApi,
-        handlePrevious,
-        handleNext,
-        handleFirst,
-        handleLast,
-        handleClear
+      pages,
+      pageState,
+      setPageState,
+      apiData,
+      setApiData,
+      name,
+      setName,
+      status,
+      setStatus,
+      gender,
+      setGender,
+      pageApi,
+      setPageApi,
+      handlePrevious,
+      handleNext,
+      handleFirst,
+      handleLast,
+      handleClear
     ]}>
-        {children}
+      {children}
     </MainContext.Provider>
   );
 };
