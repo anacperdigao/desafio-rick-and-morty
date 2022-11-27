@@ -25,15 +25,15 @@ const Cards = ({image, name, status, species, gender, origin, location, subspeci
                 {status === "Dead" && <S.TagStatus style={{backgroundColor: `${red}`}}>{status}</S.TagStatus>}
                 {status === "unknown" && <S.TagStatus>{status}</S.TagStatus>}
 
-                <S.DivLabelParagraph>
+                <S.DivLabelProps>
                     <S.Label>Species:</S.Label>
                     <S.Props>{species}</S.Props>
-                </S.DivLabelParagraph>
+                </S.DivLabelProps>
 
-                <S.DivLabelParagraph>
+                <S.DivLabelProps>
                     <S.Label>Gender:</S.Label>
                     <S.Props>{gender}</S.Props>
-                </S.DivLabelParagraph>
+                </S.DivLabelProps>
 
             </S.DivInfo>
         </S.CardCharacter>

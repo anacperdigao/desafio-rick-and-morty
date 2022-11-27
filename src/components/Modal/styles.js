@@ -69,18 +69,18 @@ export const DivInfo = styled.div`
 
 export const TitleName = styled.h3`
     color: ${bgDarkGreen};
-    font-size: 26px;
+    font-size: 1.625rem;
     margin-bottom: 5px;
 
     @media screen and (max-width: 480px){
-      font-size: 22px;
+      font-size: 1.375rem;
     }
 `
 
 export const TagStatus = styled.p`
     background-color: ${lightGray};
     color: white;
-    font-size: 12px;
+    font-size: 0.75rem;
     padding: 1px 5px;
     border-radius: 5px;
     width: 65px;
@@ -96,7 +96,7 @@ export const TagStatus = styled.p`
     }
 `
 
-export const DivLabelParagraph = styled.div`
+export const DivLabelProps = styled.div`
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -104,38 +104,37 @@ export const DivLabelParagraph = styled.div`
     margin-bottom: 5px;
 
     @media screen and (max-width: 480px){
-      font-size: 10px;
       margin-bottom: 0px;
     }
 `
 
-export const DivLabelParagraphColumn = styled.div`
+export const DivLabelPropsColumn = styled.div`
     display: flex;
     flex-direction: column;
     align-items: baseline;
 `
 
 export const Label = styled.p`
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: bold;
     color: ${lightGray};
 
     @media screen and (max-width: 480px){
-      font-size: 10px;
+      font-size: 0.625rem;
     }
 `
 
 export const Props = styled.p`
-    font-size: 15px;
+    font-size: 0.875rem;
 
     @media screen and (max-width: 480px){
-      font-size: 11px;
+      font-size: 0.625rem;
     }
 `
 
 export const Button = styled.button`
     background-color: ${red};
-    font-size: 14px;
+    font-size: .875rem;
     color: ${lightGreen};
     height: 40px;
     width: 100px;
@@ -143,7 +142,6 @@ export const Button = styled.button`
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
     :hover{
         opacity: 0.9;
     }

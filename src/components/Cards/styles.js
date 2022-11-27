@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { bgDarkGreen, blue, lightGray, lightGreen } from '../UI/colorVar'
+import styled from 'styled-components';
+import { bgDarkGreen, blue, lightGray, lightGreen } from '../UI/colorVar';
 
 
 export const CardCharacter = styled.div`
@@ -40,17 +40,17 @@ export const DivInfo = styled.div`
 
 export const TitleName = styled.h3`
     color: ${bgDarkGreen};
-    font-size: 22px;
+    font-size: 1.375rem;
 
     @media screen and (max-width: 480px){
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 `
 
 export const TagStatus = styled.p`
     background-color: ${lightGray};
     color: white;
-    font-size: 12px;
+    font-size: 0.75rem;
     padding: 1px 5px;
     border-radius: 5px;
     width: 65px;
@@ -60,12 +60,12 @@ export const TagStatus = styled.p`
     margin-bottom: 20px;
 
     @media screen and (max-width: 480px){
-      font-size: 10px;
+      font-size: 0.625rem;
       margin-bottom: 10px;
     }
 `
 
-export const DivLabelParagraph = styled.div`
+export const DivLabelProps = styled.div`
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -74,20 +74,20 @@ export const DivLabelParagraph = styled.div`
 `
 
 export const Label = styled.p`
-    font-size: 14px;
+    font-size: 0.9375rem;
     font-weight: bold;
     color: ${lightGray};
 
     @media screen and (max-width: 480px){
-      font-size: 10px;
+      font-size: 0.6875rem;
     }
 `
 
 export const Props = styled.p`
-    font-size: 15px;
+    font-size: 0.9375rem;
 
     @media screen and (max-width: 480px){
-      font-size: 11px;
+      font-size: 0.6875rem;
     }
 `
 

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { blue, lightGray, lightGreen, yellow } from '../UI/colorVar'
+import styled from 'styled-components';
+import { blue, lightGray, lightGreen, yellow } from '../UI/colorVar';
 
 
 export const DivPage = styled.div`
@@ -23,25 +23,23 @@ export const Header = styled.header`
 
 export const Title = styled.h1`
     color: white;
-    font-size: 56px;
-    letter-spacing: 1px;
-    word-spacing: 5px;
+    font-size: 3.5rem;
+    word-spacing: 0.3rem;
     cursor: pointer;
-
     :hover{
         color: ${lightGreen}
     }
 
     @media screen and (max-width: 480px){
-      font-size: 36px;
+      font-size: 2.3rem;
     }
 `
 
 export const SubTitle = styled.h2`
     color: ${yellow};
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 10px;
-    word-spacing: 2px;
+    word-spacing: 0.1rem;
 
     @media screen and (max-width: 480px){
       margin-bottom: 20px;
@@ -73,34 +71,33 @@ export const DivPagination = styled.div`
     }
 `
 
-export const Paragraph = styled.p`
+export const PageChanger = styled.p`
     color: ${lightGreen};
-    font-size: 18px;
-    cursor: pointer;
+    font-size: 1.15rem;
     height: 40px;
     width: 110px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
     :hover{
         background-color: ${lightGray};
         color: ${blue};
     }
 
     @media screen and (max-width: 480px){
-      font-size: 10px;
+      font-size: 0.625rem;
       width: 60px;
     }
 `
 
-export const ParagraphPages = styled.p`
+export const PageNumber = styled.p`
     color: ${yellow};
-    font-size: 18px;
+    font-size: 1.15rem;
 
     @media screen and (max-width: 480px){
-      font-size: 10px;
+      font-size: 0.625rem;
       width: 70px;
     }
 `

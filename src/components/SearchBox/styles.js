@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { lightGray, lightGreen, red } from '../UI/colorVar'
+import styled from 'styled-components';
+import { lightGray, lightGreen, red } from '../UI/colorVar';
 
 
 export const Box = styled.div`
@@ -19,30 +19,16 @@ export const Box = styled.div`
       justify-content: center;
       align-items: baseline;
       gap: 15px;
-
     }
 `
 
-
-export const DivName = styled.div`
+export const DivInput = styled.div`
     display: flex;
     gap: 10px;
     align-items: center;
 `
 
-
-export const DivStatus = styled.div`
-    display: flex;
-    gap: 10px;
-    align-items: center;
-
-    @media screen and (max-width: 480px){
-      width: 100%;
-    }
-`
-
-
-export const DivGender = styled.div`
+export const DivSelect = styled.div`
     display: flex;
     gap: 10px;
     align-items: center;
@@ -51,7 +37,6 @@ export const DivGender = styled.div`
       width: 100%;
     }
 `
-
 
 export const InputName = styled.input`
     height: 40px;
@@ -60,14 +45,13 @@ export const InputName = styled.input`
     outline: none;
     border-radius: 5px;
     border: none;
-    font-size: 16px;
+    font-size: 1rem;
 
     @media screen and (max-width: 480px){
       width: 100%;
       height: 30px;
     }
 `
-
 
 export const Select = styled.select`
     height: 40px;
@@ -76,29 +60,22 @@ export const Select = styled.select`
     outline: none;
     border-radius: 5px;
     border: none;
-    font-size: 16px;
+    font-size: 1rem;
 
     @media screen and (max-width: 480px){
       width: 100%;
-      font-size: 14px;
       height: 30px;
     }
 `
 
-
 export const Label = styled.label`
-    font-size: 20px;
+    font-size: 1.25rem;
     color: ${lightGreen};
-
-    @media screen and (max-width: 480px){
-      font-size: 16px;
-    }
 `
-
 
 export const Button = styled.button`
     background-color: ${red};
-    font-size: 14px;
+    font-size: 0.875rem;
     color: white;
     height: 40px;
     width: 100px;
@@ -106,7 +83,6 @@ export const Button = styled.button`
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
     :hover{
         opacity: 0.9;
     }

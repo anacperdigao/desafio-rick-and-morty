@@ -14,24 +14,9 @@ import * as S from './styles';
 
 const CharactersPage = () => {
 
-  const [ pages,
-          pageState,
-          setPageState,
-          apiData,
-          setApiData,
-          name,
-          setName,
-          status,
-          setStatus,
-          gender,
-          setGender,
-          pageApi,
-          setPageApi,
-          handlePrevious,
-          handleNext,
-          handleFirst,
-          handleLast,
-          handleClear ] = useContext(MainContext);
+  const [ pages, pageState, setPageState, apiData, setApiData, name, setName, status, setStatus, gender,
+          setGender, pageApi, setPageApi, handlePrevious, handleNext, handleFirst, handleLast, handleClear
+        ] = useContext(MainContext);
 
 
   return (
@@ -62,11 +47,11 @@ const CharactersPage = () => {
       </S.DivCards>
 
       <S.DivPagination>
-        <S.Paragraph onClick={handleFirst}>&lt;&lt; First</S.Paragraph>
-        <S.Paragraph onClick={handlePrevious}>&lt; Previous</S.Paragraph>
-        <S.ParagraphPages>Page {pageApi} - {apiData.info.pages}</S.ParagraphPages>
-        <S.Paragraph onClick={handleNext}>Next &gt;</S.Paragraph>
-        <S.Paragraph onClick={handleLast}>Last &gt;&gt;</S.Paragraph>
+        <S.PageChanger onClick={handleFirst}>&lt;&lt; First</S.PageChanger>
+        <S.PageChanger onClick={handlePrevious}>&lt; Previous</S.PageChanger>
+        <S.PageNumber>Page {pageApi} - {apiData.info.pages}</S.PageNumber>
+        <S.PageChanger onClick={handleNext}>Next &gt;</S.PageChanger>
+        <S.PageChanger onClick={handleLast}>Last &gt;&gt;</S.PageChanger>
       </S.DivPagination>
 
     </S.DivPage>

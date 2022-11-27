@@ -10,29 +10,14 @@ import * as S from './styles';
 
 const SearchBox = () => {
 
-  const [ pages,
-          pageState,
-          setPageState,
-          apiData,
-          setApiData,
-          name,
-          setName,
-          status,
-          setStatus,
-          gender,
-          setGender,
-          pageApi,
-          setPageApi,
-          handlePrevious,
-          handleNext,
-          handleFirst,
-          handleLast,
-          handleClear ] = useContext(MainContext);
+  const [ pages, pageState, setPageState, apiData, setApiData, name, setName, status, setStatus, gender,
+          setGender, pageApi, setPageApi, handlePrevious, handleNext, handleFirst, handleLast, handleClear
+        ] = useContext(MainContext);
 
 
   return (
     <S.Box>
-        <S.DivName>
+        <S.DivInput>
             <S.Label htmlFor="name">Name: </S.Label>
             <S.InputName
                 type="text"
@@ -41,9 +26,9 @@ const SearchBox = () => {
                 value={name}
                 onChange={e => setName(e.target.value.toLowerCase())}
             />
-        </S.DivName>
+        </S.DivInput>
 
-        <S.DivStatus>
+        <S.DivSelect>
             <S.Label htmlFor="status">Status: </S.Label>
             <S.Select name="status" id="status" onChange={e => setStatus(e.target.value)} value={status} >
                 <option value=""></option>
@@ -51,9 +36,9 @@ const SearchBox = () => {
                 <option value="dead">Dead</option>
                 <option value="unknown">Unknown</option>
             </S.Select>
-        </S.DivStatus>
+        </S.DivSelect>
 
-        <S.DivGender>
+        <S.DivSelect>
             <S.Label htmlFor="gender">Gender:</S.Label>
             <S.Select name="gender" id="gender" onChange={e => setGender(e.target.value)} value={gender}>
                 <option value=""></option>
@@ -62,10 +47,9 @@ const SearchBox = () => {
                 <option value="genderless">Genderless</option>
                 <option value="unknown">Unknown</option>
             </S.Select>
-        </S.DivGender>
+        </S.DivSelect>
 
         <S.Button onClick={handleClear}>Clear filter</S.Button>
-
     </S.Box>
   );
 };
