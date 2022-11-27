@@ -1,10 +1,12 @@
-import React from 'react'
-import { neonDarkGreen, red } from '../UI/colorVar'
-import * as S from './styles'
+// React and hooks
+import React from 'react';
+
+// Style
+import { neonDarkGreen, red } from '../UI/colorVar';
+import * as S from './styles';
 
 
-const Modal = ({image, name, status, species, gender, origin,
-                    showModal, setShowModal, location, subspecies}) => {
+const Modal = ({image, name, status, species, gender, origin, showModal, setShowModal, location, subspecies}) => {
 
 
   return (
@@ -56,8 +58,7 @@ const Modal = ({image, name, status, species, gender, origin,
 
         </S.Dialog>
     </S.DivShowModal>
+  );
+};
 
-  )
-}
-
-export default Modal
+export default Modal;

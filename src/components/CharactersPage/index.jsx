@@ -1,8 +1,15 @@
-import React, { useContext } from 'react'
-import { MainContext } from '../../context/main'
-import Cards from '../Cards'
-import SearchBox from '../SearchBox'
-import * as S from './styles'
+// React and hooks
+import React, { useContext } from 'react';
+
+// Components
+import Cards from '../Cards';
+import SearchBox from '../SearchBox';
+
+// Context
+import { MainContext } from '../../context/main';
+
+// Style
+import * as S from './styles';
 
 
 const CharactersPage = () => {
@@ -24,7 +31,7 @@ const CharactersPage = () => {
           handleNext,
           handleFirst,
           handleLast,
-          handleClear ] = useContext(MainContext)
+          handleClear ] = useContext(MainContext);
 
 
   return (
@@ -63,7 +70,7 @@ const CharactersPage = () => {
       </S.DivPagination>
 
     </S.DivPage>
-  )
-}
+  );
+};
 
-export default CharactersPage
+export default CharactersPage;

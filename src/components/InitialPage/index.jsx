@@ -1,11 +1,20 @@
-import React, { useContext } from 'react'
-import * as S from "./styles"
-import { MainContext } from '../../context/main'
-import Background from '../../assets/images/wallpaper1.jpg'
+// React and hooks
+import React, { useContext } from 'react';
+
+// Context
+import { MainContext } from '../../context/main';
+
+// Style
+import * as S from "./styles";
+
+// Images
+import Background from '../../assets/images/wallpaper1.jpg';
+
+
 
 const InitialPage = () => {
 
-    const [ pages, pageState, setPageState ] = useContext(MainContext)
+  const [ pages, pageState, setPageState ] = useContext(MainContext);
 
   return (
 
@@ -20,7 +29,7 @@ const InitialPage = () => {
         </S.DivInfo>
 
     </S.DivPage>
-  )
-}
+  );
+};
 
-export default InitialPage
+export default InitialPage;

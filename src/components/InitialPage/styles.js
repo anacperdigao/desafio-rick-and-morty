@@ -35,31 +35,30 @@ export const DivInfo = styled.div`
 
 export const Title = styled.h1`
     color: white;
-    font-size: 68px;
-    letter-spacing: 1px;
-    word-spacing: 5px;
+    font-size: 4.5rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
 
     @media screen and (max-width: 480px){
-      font-size: 54px;
+      font-size: 3.5rem;
     }
 `
 
 export const SubTitle = styled.h2`
     color: ${yellow};
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
-    word-spacing: 2px;
+    word-spacing: 0.2rem;
 
     @media screen and (max-width: 480px){
-      font-size: 16px;
+      font-size: 1rem;
     }
 `
 
 export const Button = styled.button`
     background-color: ${neonDarkGreen};
-    letter-spacing: 1px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: white;
     height: 40px;
     width: 150px;

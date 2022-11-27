@@ -1,6 +1,11 @@
-import React, { useContext } from 'react'
-import { MainContext } from '../../context/main'
-import * as S from './styles'
+// React and hooks
+import React, { useContext } from 'react';
+
+// Context
+import { MainContext } from '../../context/main';
+
+// Style
+import * as S from './styles';
 
 
 const SearchBox = () => {
@@ -22,7 +27,7 @@ const SearchBox = () => {
           handleNext,
           handleFirst,
           handleLast,
-          handleClear ] = useContext(MainContext)
+          handleClear ] = useContext(MainContext);
 
 
   return (
@@ -62,7 +67,7 @@ const SearchBox = () => {
         <S.Button onClick={handleClear}>Clear filter</S.Button>
 
     </S.Box>
-  )
-}
+  );
+};
 
-export default SearchBox
+export default SearchBox;

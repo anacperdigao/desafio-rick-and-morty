@@ -1,12 +1,17 @@
-import React, { useState } from 'react'
-import Modal from '../Modal'
-import { neonDarkGreen, red } from '../UI/colorVar'
-import * as S from './styles'
+// React and hooks
+import React, { useState } from 'react';
+
+// Components
+import Modal from '../Modal';
+
+// Style
+import { neonDarkGreen, red } from '../UI/colorVar';
+import * as S from './styles';
 
 
 const Cards = ({image, name, status, species, gender, origin, location, subspecies}) => {
 
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
@@ -48,7 +53,7 @@ const Cards = ({image, name, status, species, gender, origin, location, subspeci
             setShowModal={setShowModal}
         />}
     </>
-  )
-}
+  );
+};
 
-export default Cards
+export default Cards;
